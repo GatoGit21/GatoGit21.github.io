@@ -9,7 +9,6 @@ nav{
 	justify-content: center;
 	align-items: center;
 	background-color: gold;
-	font-size: 1.5em;
 }
 
 nav>div{
@@ -19,7 +18,7 @@ nav>div{
 }
 
 nav i{
-	font-size: 3em;
+	font-size: 5em;
 }
 
 .secciones{
@@ -29,10 +28,19 @@ nav i{
 
 .secciones a{
 	margin: 0.8em;
+	font-family: 'Dancing Script', cursive;
+	text-decoration: none;
+	font-size: 2em;
+	color: black;
 }
 
 nav>form{
 	display: flex;
 	flex-direction: column;
+	font-family: 'Dancing Script', cursive;
+}
 
+form div{
+	display: flex;
+	justify-content: space-between;
 }
