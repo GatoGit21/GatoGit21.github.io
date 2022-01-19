@@ -44,3 +44,32 @@ form div{
 	display: flex;
 	justify-content: space-between;
 }
+
+.contenido{
+	width: 100%;
+}
+#imgs{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+.foto{
+	width: 25%;
+	min-width: 440px;
+	max-height: 650px;
+	min-height: 600px;
+	display: flex;
+	flex-direction: column;
+	object-fit: fill;
+}
+.foto img{
+	height: 95%;
+}
+.foto .texto{
+	background-color: gold;
+	width: 100%;
+	text-align: center;
+}
+
+
