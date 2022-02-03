@@ -1,121 +1,83 @@
 body{
 	margin: 0px;
+	background-color: #ded27c;
+	padding-top: 2em;
+}
+
+header{
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	z-index: 1;
+	padding: 1em;
+	background-color: white;
+	border-bottom: 2px solid black;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+header>img{
+	width: 5em;
 }
 
 nav{
-	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	background-color: gold;
+	width: 85%;
+	font-family: 'Open Sans', sans-serif;	
+	justify-content: space-around;
 }
 
-nav>div{
-	margin: 1.5em;
-	margin-bottom: 1em;
-	margin-top: 1em;
-}
-
-nav i{
-	font-size: 5em;
-}
-
-.secciones{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.secciones a{
-	margin: 0.8em;
-	font-family: 'Dancing Script', cursive;
-	text-decoration: none;
+nav>a{
 	font-size: 2em;
 	color: black;
 }
 
-nav>form{
-	display: flex;
-	flex-direction: column;
-	font-family: 'Dancing Script', cursive;
+main{
+	margin: 4em;
+	padding: 1em;
+	background-color: white;
+	border: 2px solid black;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	min-width: 500px;
 }
 
-form div{
-	display: flex;
-	justify-content: space-between;
+.negrita{
+	font-weight: bold;
 }
 
-.contenido{
-	width: 100%;
+.instalacion{
+	max-width: 60%;
+	margin: auto;
 }
-#imgs{
+
+.escritorios{
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;	
+	padding: 1.2em;
 }
-figure.fotoC{
-	width: 16.666%;
-	min-width: 300px;
-	height: 30em;
+
+.escritorio{
 	display: flex;
 	flex-direction: column;
-	margin: 0px;
-}
-.fotoC>img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.fotoC .texto{
-	background-color: gold;
-	width: 100%;
-	text-align: center;
-	font-size: 2em;
-	font-family: 'Dancing Script', cursive;
-}
-
-table{
+	border: 2px solid black;
+	padding: 0.5em;
+	align-items: center;
+	max-width: 40%;
+	min-width: 400px;
 	margin: auto;
-	width: 60em;
-	border-collapse: collapse;
-	font-family: 'Roboto', sans-serif;
-	font-size: 1.4rem;
+	margin-bottom: 2em;
 }
 
-table th{
-	width: 20%;
-	border: 2px solid black;
+.escritorio>img{
+	max-width: 100%;
+}
+.escritorio>span{
 	font-size: 2em;
-	color: white;
-	background-color: black;
-	font-family: 'Dancing Script', cursive;
-}
-table tr.impar{
-	background-color: gold;
-}
-table td{
-	width: 20%;
-	border: 2px solid black;
-	text-align: center;
-}
-table td.foto{
-	padding: 0px;
-	height: 14em;
-}
-
-td.foto img{
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-td.nombre{
-	font-family: 'Dancing Script', sans-serif;
-	font-size: 2em;
-}
-
-.texto{
-	font-family: 'Roboto', sans-serif;	
 }

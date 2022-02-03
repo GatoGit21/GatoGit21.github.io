@@ -1,240 +1,128 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Política moderna</title>
-	
-	<!--Enlace Font Awesome-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	
-	<!--Enlaces a Google Fonts-->
+	<title>ReactOS</title>
+	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-	<!--Archivo CSS-->
-	<link rel="stylesheet" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
 </head>
 <body>
-	<nav>
-		<div class="icono">
-			<i class="fas fa-landmark"></i>
-		</div>		
-		<div class="secciones">
-			<a href="">Políticos actuales</a>
-			<a href="">Tabla de políticos</a>
-			<a href="">Sergio Tarrero</a>
-		</div>
-		<form action="">
-			<div class="usuario">
-				<label for="usuario">Usuario:</label>
-				<input type="email">
-			</div>
-			<div class="contrasena">
-				<label for="contrasena">Contraseña:</label>
-				<input type="password">
-			</div>
-			<button>Entrar</button>
-		</form>
-	</nav>
+	<header>
+		<img src="img/logo.png" alt="logotipo">
+		<nav>
+			<a href="#introduccion">Introducción</a>
+			<a href="#historia">Historia</a>
+			<a href="#comunidad">Comunidad</a>
+		</nav>
+	</header>
 	<main>
-		<article id="contenido">
-			<section id="imgs">
-				<figure class="fotoC">
-					<img src="img/sanchez.jpg" alt="sanchez">
-					<figcaption class="texto">Pedro Sánchez</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/casado.jpg" alt="casado">
-					<figcaption class="texto">Pablo Casado</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/abascal.jpg" alt="abascal">
-					<figcaption class="texto">Santiago Abascal</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/belarra.jpg" alt="">
-					<figcaption class="texto">Ione Belarra</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/garzon.jpg" alt="garzon">
-					<figcaption class="texto">Alberto Garzón</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/arrimadas.jpg" alt="arrimadas">
-					<figcaption class="texto">Inés Arrimadas</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/enrique.jpg" alt="enrique">
-					<figcaption class="texto">Enrique de Borbón-Parma</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/luna.png" alt="Luna">
-					<figcaption class="texto">Javier Luna</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/dieguez.jpg" alt="dieguez">
-					<figcaption class="texto">Rafael López-Diéguez</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/tarrero.jpg" alt="tarrero">
-					<figcaption class="texto">Sergio Tarrero</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/pico.jpg" alt="pico">
-					<figcaption class="texto">Norberto Pico</figcaption>
-				</figure>
-				<figure class="fotoC">
-					<img src="img/santiago.jpg" alt="santiago">
-					<figcaption class="texto">Enrique Santiago</figcaption>
-				</figure>
-			</section>
-		</article>
-
-		<article>
-			<table>
-				<thead>
-					<th>Foto</th>
-					<th>Nombre</th>
-					<th>Nacimiento</th>
-					<th>Ideología</th>
-					<th>Votos en 2019</th>
-				</thead>
-				<tbody>
-					<tr>
-						<td class="foto"><img src="img/sanchez.jpg" alt="sanchez"></td>
-						<td class="nombre">Pedro Sánchez Pérez-Castejón</td>
-						<td>29 de febrero de 1972, Tetuán, Madrid</td>
-						<td>PSOE - Socialdemocracia, descentralismo, liberalismo social</td>
-						<td>6.792.983 (28%)</td>
-					</tr>
-					<tr class="impar">
-						<td class="foto"><img src="img/casado.jpg" alt="casado"></td>
-						<td class="nombre">Pablo Casado Blanco</td>
-						<td>1 de febrero de 1981, Palencia</td>
-						<td>Partido Popular - Conservadurismo social, liberalismo económico</td>
-						<td>5.019.869 (20.82%)</td>
-					</tr>
-					<tr>
-						<td class="foto"><img src="img/abascal.jpg" alt="abascal"></td>
-						<td class="nombre">Santiago Abascal Conde</td>
-						<td>14 de abril de 1976, Bilbao</td>
-						<td>VOX - Nacionalismo, centralismo, conservadurismo social, proteccionismo económico, euroescepticismo</td>
-						<td>3.656.979 (15.08%)</td>
-					</tr>
-					<tr class="impar">
-						<td class="foto"><img src="img/belarra.jpg" alt=""></td>
-						<td class="nombre">Ione Belarra Urteaga</td>
-						<td>25 de septiembre de 1987, Pamplona</td>
-						<td>Podemos - Socialismo económico, republicanismo, progresismo social</td>
-						<td>2.381.960 (17.8%)</td>
-					</tr>
-					<tr>
-						<td class="foto"><img src="img/garzon.jpg" alt="garzon"></td>
-						<td class="nombre">Alberto Carlos Garzón Espinosa</td>
-						<td>9 de octubre de 1985</td>
-						<td>Izquierda Unida - Socialismo económico, progresismo social, republicanismo, federalismo, euroescepticismo</td>
-						<td>En coalición con Podemos</td>
-					</tr>
-					<tr class="impar">
-						<td class="foto"><img src="img/arrimadas.jpg" alt="arrimadas"></td>
-						<td class="nombre">Inés Arrimadas García</td>
-						<td>3 de julio de 1981, Jerez de la Frontera</td>
-						<td>Ciudadanos - Liberalismo progresista, autonomismo, antinacionalismo, aconfesionalismo</td>
-						<td>1.650.318 (6.8%)</td>
-					</tr>
-					<tr>
-						<td class="foto"><img src="img/enrique.jpg" alt="enrique"></td>
-						<td class="nombre">Sixto Enrique de Borbón-Parma</td>
-						<td>22 de julio de 1940, Francia</td>
-						<td>Pretendiende carlista - Tradicionalismo, federalismo, monarquismo, panhispanismo, catolicismo</td>
-						<td>No se presentó</td>
-					</tr>
-					<tr class="impar">
-						<td class="foto"><img src="img/luna.png" alt="estevez"></td>
-						<td class="nombre">Javier Luna Sánchez</td>
-						<td>7 de agosto de 1976, Córdoba</td>
-						<td>PACMA - Veganismo, ecologismo, animalismo, progresismo</td>
-						<td>228.856 (0.95%)</td>
-					</tr>
-					<tr>
-						<td class="foto"><img src="img/dieguez.jpg" alt="dieguez"></td>
-						<td class="nombre">Rafael López-Diéguez Gamoneda</td>
-						<td>18 de abril de 1958, Madrid</td>
-						<td>Alternativa Española - Nacionalismo, catolicismo politico, socialcristianismo, conservadurismo</td>
-						<td>Coalición ADÑ - 9.749 (0.01%)</td>
-					</tr>
-					<tr class="impar">
-						<td class="foto"><img src="img/tarrero.jpg" alt="tarrero"></td>
-						<td class="nombre">Sergio Martínez de Lahidalga Tarrero</td>
-						<td>6 de febrero de 1962, Madrid</td>
-						<td>Alianza Futurista - Transhumanismo democrático, laicismo</td>
-						<td>No se presentó</td>
-					</tr>
-					<tr>
-						<td class="foto"><img src="img/pico.jpg" alt="pico"></td>
-						<td class="nombre">Norberto Pico Sanabria</td>
-						<td>19 de enero de 1976, Madrid</td>
-						<td>FE de las JONS - Nacional sindicalismo, falangismo, euroescepticismo</td>
-						<td>Coalición ADÑ - 9.749 (0.01%)</td>
-					</tr>
-					<tr class="impar">
-						<td class="foto"><img src="img/santiago.jpg" alt="santiago"></td>
-						<td class="nombre">Enrique Santiago Romero</td>
-						<td>18 de julio de 1964, Madrid</td>
-						<td>PCE/IU - Comunismo, republicanismo, eurocomunismo, centralismo</td>
-						<td>En IU en coalición con Podemos</td>
-					</tr>
-				</tbody>
-			</table>
-		</article>
-		<section id="texto">
+		<section id="introduccion">
 			<article>
-				<h2>Sergio Tarrero - Alianza Futurista</h2>
+				<h2>Introducción</h2>
+				<p>ReactOS es un sistema operativo de código abierto cuyo código se rige por la licencia GPL<sup><a href="https://reactos.org/wiki/ReactOS_FAQ#Is_ReactOS_legal.3F">[1]</a></sup>. Se basa en Windows Server 2003 y en su kernel de Windows NT 5.2<sup><a href="https://reactos.org/forum/viewtopic.php?f=2&t=20883&p=144855&hilit=2003#p144855">[2]</a></sup>, lo que le permite ejecutar aplicaciones creadas para Windows (desde Windows 95 a Windows 8<sup><a href="https://github.com/DarkFire01/reactos/tree/Extended-NT6+">[3]</a></sup>) aunque se encuentra en un estado de desarrollo constante.</p>
+				<p>A día de hoy, la versión "estable" de ReactOS es 0.4.14 en 32 bits, aunque se esté trabajando en la siguiente (0.4.15). Las versiones de 64 bits aún son experimentales y no se publican completamente compiladas.<sup><a href="https://reactos.org/getbuilds/">[4]</a></sup></p>
+			</article>
+			<article>
+				<h3>Requisitos<sup><a href="https://reactos.org/wiki/Installing_ReactOS">[5]</a></sup>:</h3>
+				<ul>
+					<li>Ram: Mínimo 64 MB, recomendado 256 MB.</li>
+					<li>CPU: x86 o x86_64, desde Pentium en adelante.</li>
+					<li>Mínimo 450 MB de espacio libre en Discos IDE o SATA. Los formatos soportados son FAT16 y FAT32.</li>
+					<li>GPU con puerto VGA.</li>
+				</ul>
+			</article>
+
+			<article>
+				<p>Su instalación es muy similar a la de los Windows de finales de los 90 y principios del 2000, por lo que se hace bastante fácil.</p>
+				<img class="instalacion" src="img/instalacion.png" alt="instalacion">
+			</article>
+			<article>
+				<h3>Características:</h3>
+				<p><span class="negrita">Compatibilidad general con programas de 32 bits de Windows XP y Windows Server 2003</span>, aunque se ha logrado ejecutar aplicaciones no compatibles con estas versiones como Minecraft<sup><a href="https://cdn.discordapp.com/attachments/377108064827867136/829476674721808384/unknown.png">[6]</a></sup>, RPCS3<sup><a href="https://cdn.discordapp.com/attachments/377108064827867136/673266289774428160/ReactOS_0.414_Running_-_Oracle_VM_VirtualBox_1.2.2020._21_32_24.png">[7]</a></sup> o VirtualBox<sup><a href="https://cdn.discordapp.com/attachments/377108064827867136/594611868379906059/Unnamed.png">[8]</a></sup>. En su versión de lanzamiento de 32 bits, es compatible con programas del día a día como LibreOffice, Firefox, VLC, LibreCAD <sup><a href="https://reactos.org/gallery/">[9]</a></sup> o Dev-C++ <sup><a href="https://twitter.com/reactos/status/1450165142285656064">[10]</a></sup>, aunque por ahora, algunos solo con versiones más antiguas.</p>
+
+				<p>Posee compatibilidad con controladores de hardware para Windows Server 2003 y XP para poder funcionar en hardware antiguo. Además incluye su propio explorador de archivos, un buscador, una tienda de aplicaciones creada para este sistema operativo (con programas seleccionados por la comunidad que funcionan plenamente)<sup><a href="https://github.com/reactos/rapps-db">[11]</a></sup> e incluso su propio registro. Compatibilidad muy básica con DirectX pero tiene soporte completo con OpenGL 1.4<sup><a href="https://reactos.org/wiki/Category:ReactOS_Components">[12]</a></sup>.</p>
+
+				<p>Su kernel es <span class="negrita">compatible con el lenguaje Batch</span>, y puede ejecutar los ejecutables .bat como si fuera Windows. Posee CMD pero actualmente no hay planes para replicar PowerShell<sup><a href="https://reactos.org/wiki/Working_Batch_Commands">[13]</a></sup>.</p>
+
+				<p>Por defecto, trae <span class="negrita">5 temas de escritorio</span> con estética clásica de principios de los 2000:</p>
+				<div class="escritorios">
+					<div class="escritorio">
+						<img src="img/classic.png" alt="tema classic">
+						<span>Classic</span>
+					</div>
+					<div class="escritorio">
+						<img src="img/lautus.png" alt="tema lautus">
+						<span>Lautus</span>
+					</div>
+					<div class="escritorio">
+						<img src="img/lunar.png" alt="tema lunar">
+						<span>Lunar</span>
+					</div>
+					<div class="escritorio">
+						<img src="img/mizu.png" alt="tema mizu">
+						<span>Mizu</span>
+					</div>
+					<div class="escritorio">
+						<img src="img/modern.png" alt="tema modern">
+						<span>Modern</span>
+					</div>
+				</div>
+			</article>
+				
+
+			
+		</section>
+		<section id="historia">
+			<h2>Historia</h2>
+			<article>
+				<h3>Primeros Pasos</h3>
 				<p>
-					Imaginemos un mundo futuro donde el ser humano ha podido vencer a todas las enfermedades gracias a la ciencia y, por supuesto, no solo las ha vencido, sino que gracias a ella no conoce sus dolencias. Una sociedad donde en un momento dado se podría confiar en la Inteligencia Artificial para realizar labores que hoy desempeñamos los humanos, la robotización habría generado riqueza consiguiendo que mujeres y hombres no tengan que preocuparse por mantener un trabajo, y que incluso se abriera la puerta a mejoras físicas e intelectuales, todo redundando en una comunidad más justa. Un mundo en el que incluso hubiera la posibilidad técnica de, para quien quisiera, vivir eternamente gracias a la anulación del envejecimiento.
+					Es un sistema operativo libre y de codigo abierto para PCs x86/x64 desarrollado para ser compatible a nivel binario con programas informaticos  y controladorres de dispositivos
+					diseñados para Microsoft Windows Server 2003 y posteriores.Diseñada para ser un remplazo de codigo abierto de Windows.</p>
+				<p>
+					El sistema se encuentra en desarrollo desde 1996,a octubre de 2020 todavia se le considera software alfa, a pesar de estar incompleto muchas delas aplicaciones de Windows ya funcionan
+					en el sistema, esta escrito principalmente en C aunque ciertos elementos estan escritos en C++.
+					Primeramente en los inicios del Proyecto llamado FreeWin95 el cual consistia en implementar en un clon de Windows 95, si bien el proyecto tuvo grandes expectativos nunca llego a publicarse 
+					al publico.
 				</p>
 				<p>
-					En España existe un partido que defiende estas posturas. Su nombre es Alianza Futurista y está registrado en el Censo de Partidos del Ministerio del Interior desde 2013. Uno de sus representantes, Sergio Tarrero, explica que no se han presentado a las elecciones de 2019 porque son conscientes de que aún no tienen fuerza suficiente, pero que esperan hacerlo a futuro.
+					En 1997 los miembros del proyecto dirigidos por Jason Filby se unieron para reactivar el proyecto bajo el nombre de ReactOS.Se comenzo el desarrollo en Febrero de 1998 con la creacion de base de un 
+					de un nucleo de NT y controladores basicos, el termino ReactOS fue acuñado por el fundador del proyecto Jeff Knox. El desarrollo se dio en oposicion del monopolio de Microsoft.
+				</p>	
+			</article>
+			<article>
+				<h3>Auditoria Interna</h3>
+				<p>				
+				En 2004 se hallaron unua violacion de los derechos de autor en el codigo GPL cuando alguien distribuyo una copia bajo el nombre de EkushOS
+				En Enero de 2006 se descubrio que ciertas funciones comparadas con los binarios desensamblados de Windows XP eran identicas afirmando por algunos desarrolladores que todo fue un copiar y pegar de Windows XP
+				en cambio el autor afirmo que ña unica razon por la que eran identicas fue el hecho de que esa era la unica forma de implementar la funcion.
 				</p>
 				<p>
-					Entre las propuestas que plantean están fomentar medidas para democratizar el acceso a la tecnología, mejorar la inversión en I+D, crear un ecosistema de emprendimiento favorecedor, y también medidas fiscales que tocan distintos impuesto a la baja junto con otros al alza como tasas sobre objetos de lujo o sobre movilidad la movilidad contaminante, además de abrir la puerta a una Renta Básica.
+					Poco despues se empezo a verificar si el proyecto habria sido contaminado con el codigo con derechos de autor de Microsoft, este incidente provoco una reaccion negativa de la comunidad del
+					software libre. En particular, Wine prohibio a algunos desarrolladores de ReactOS contribuir con ellos debido a las precocupaciones del origen de sus contribuciones, esta situacion tensa entre Wine y los desarrolladores 
+					del SO siguen de foma que no puedan contribuir estos ultimos en el desarrollo de Wine.
 				</p>
 				<p>
-					«Sabemos que hay ideas que pueden chocar a la gente, pero en la práctica hoy en día un gobierno transhumanista propondría focalizar la inversión en ciencia y tecnología y extender gratuitamente en la sanidad pública nuevas herramientas que ya están en uso como las prótesis con tecnología 3D para las personas discapacitadas, o abrir la puerta a tratamientos que ya cuentan con un respaldo académico importante pero que por distintas cuestiones no se implementan. No creo que nada de esto sea futurista o utópico, solo se trata de aprovechar y extender a todo el mundo los avances tecnológicos que harían que muchas personas tuvieran una vida mejor.» - Tarrero, 2019
-				</p>
-				<p>
-					Otros intereses del transhumanismo en la práctica tienen que ver también con mejorar la calidad de vida y el respeto a los animales, la igualdad, y mejorar el tratamiento de datos y el tan candente debate sobre la privacidad. Por el momento todos los partidos transhumanistas a nivel global están organizados en una Federación, con la confianza de que algún día sus ideas den el paso para estar presentes también en las papeletas electorales como una opción más.
+					ReactOS se apoyo en las definiciones legales que tuvo lugar en la sala limpia de ingenieria inversa como una las causas del conflicto.Ya que existia diferentes formas de aplicar la ingenieria inversa como en USA el que desmantela
+					y examina el codigo debe ser diferente al que lo monta mientras que en otros paises se permite que sea la misma persona.Todos los desarrolladores se comprometieron en escrito a cumplir las politicas de ingenieria inversa de USA.
+					Poco despues se restablecieron las herramientas de desarrollo.Con el tiempo el codigo ensamblador, que tambein parece haber sido copiado, fue sustituido por una progresion natural en el desarrollo de ReacOS. <sup><a href="https://es.wikipedia.org/wiki/ReactOS#Historia">[11]</a></sup>
 				</p>
 			</article>
-			<h2>Inspiraciones</h2>
-			<details>
-				<summary>La Singularidad se acerca - Ray Kurzweil</summary>
-				<p>
-					Kurzweil aborda la historia del concepto de Singularidad, remontándose a John von Neumann en los años 50 y a I. J. Good en los 60. Compara su Singularidad con la de una singularidad matemática o astrofísica. Aunque su idea de Singularidad no es realmente infinita, dice que lo parece desde cualquier perspectiva limitada.
+			<article>
+				<h3>Apoyo de Rusia</h3>
+				<p>		
+				El coordinador de proyecto Aleksey Bragin hizo una presentacion del SO ejecutando varios programas de Windows ante Viktor Alksnis politico Ruso impulsor del Software Libre este hecho tuvo lugar en 2007
+				En 2011 tambien se hizo una demostracion a Dimitri Medvedev en aquel momento presidente de RusiaEn 2012 de igual forma se le hizo una demostracion a Vladimir Putin actual presidente de Rusia.	<sup><a href="https://es.wikipedia.org/wiki/ReactOS#Demostraci%C3%B3n_a_figuras_pol%C3%ADticas">[12]</a></sup>	
+				De igual forma el coordinador de proyecto presento el SO en una iniciativa que  se organizo en 2014 con la Federacion Rusa  y las naciones de BRICS.Quedando el proyecto en segundo lugar en SO por detras de RosaLAb y siendo una de las mejores 
+				alternativas  a Windows a dia de hoy.<sup><a href="https://reactos.org/project-news/reactos-second-os-russian-governments-software-freedom-effort/">[13]</a></sup>	
 				</p>
-				<p>
-					La Singularidad tecnológica es un punto hipotético en el que el crecimiento tecnológico se vuelve incontrolable e irreversible, dando lugar a cambios imprevisibles en la civilización humana.
-				</p>
-				<p>
-					Durante la Singularidad, Kurzweil predice que "la vida humana se transformará irreversiblemente" y que los humanos trascenderán las "limitaciones de nuestros cuerpos y cerebros biológicos". Mira más allá de la Singularidad para decir que "la inteligencia que surgirá seguirá representando la civilización humana". Además, considera que "las futuras máquinas serán humanas, aunque no sean biológicas".
-				</p>
-				<p>
-					Kurzweil afirma que una vez que la inteligencia no biológica predomine, la naturaleza de la vida humana se verá radicalmente alterada: habrá cambios radicales en la forma en que los seres humanos aprenden, trabajan, juegan y hacen la guerra. Kurzweil prevé nanobots que permitan a las personas comer lo que quieran sin dejar de estar delgadas y en forma, que les proporcionen abundante energía, que combatan las infecciones o el cáncer, que sustituyan órganos y que aumenten sus cerebros. Con el tiempo, los cuerpos de las personas contarán con tantos aumentos que podrán alterar su "manifestación física a voluntad".
-				</p>
-				<p>
-					Kurzweil afirma que la ley de los rendimientos acelerados sugiere que, una vez que una civilización desarrolle tecnologías mecánicas primitivas, sólo pasarán unos siglos antes de que consiga todo lo que se describe en el libro, momento en el que empezará a expandirse hacia el exterior, saturando el universo de inteligencia. Dado que no se han encontrado pruebas de otras civilizaciones, Kurzweil cree que los humanos están probablemente solos en el universo. Por lo tanto, Kurzweil concluye que el destino de la humanidad es saturar el universo, y que toda la materia y la energía participarán en el proceso.
-				</p>
-				<p>
-					En cuanto a las identidades individuales durante estos cambios radicales, Kurzweil sugiere que la gente pensará en sí misma como un patrón en evolución más que como una colección específica de moléculas. Kurzweil afirma que la evolución avanza hacia "una mayor complejidad, una mayor elegancia, un mayor conocimiento, una mayor inteligencia, una mayor belleza, una mayor creatividad y mayores niveles de atributos sutiles, como el amor". Dice que estos atributos, en el límite, se utilizan generalmente para describir a Dios. Eso significa, prosigue, que la evolución avanza hacia una concepción de Dios y que la transición desde las raíces biológicas es, de hecho, una empresa espiritual.
-				</p>
-			</details>
-			<details><h2>La promesa de la tecnología</h2>
-				<summary>
-					
-				</summary>
-			</details>
+			</article>
+		</section>
+		<section id="comunidad">
+			
 		</section>
 	</main>
 </body>
