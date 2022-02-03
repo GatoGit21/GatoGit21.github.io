@@ -54,7 +54,7 @@ form div{
 	flex-direction: row;
 	justify-content: center;	
 }
-figure.foto{
+figure.fotoC{
 	width: 16.666%;
 	min-width: 300px;
 	height: 30em;
@@ -62,11 +62,12 @@ figure.foto{
 	flex-direction: column;
 	margin: 0px;
 }
-.foto>img{
+.fotoC>img{
 	width: 100%;
-	height: 98%;
+	height: 100%;
+	object-fit: cover;
 }
-.foto .texto{
+.fotoC .texto{
 	background-color: gold;
 	width: 100%;
 	text-align: center;
@@ -75,13 +76,23 @@ figure.foto{
 }
 
 table{
+	margin: auto;
 	width: 60em;
 	border-collapse: collapse;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4rem;
 }
 
 table th{
 	width: 20%;
 	border: 2px solid black;
+	font-size: 2em;
+	color: white;
+	background-color: black;
+	font-family: 'Dancing Script', cursive;
+}
+table tr.impar{
+	background-color: gold;
 }
 table td{
 	width: 20%;
@@ -90,10 +101,21 @@ table td{
 }
 table td.foto{
 	padding: 0px;
-	height: 15em;
+	height: 14em;
 }
 
 td.foto img{
+	display: block;
 	width: 100%;
 	height: 100%;
+	object-fit: cover;
+}
+
+td.nombre{
+	font-family: 'Dancing Script', sans-serif;
+	font-size: 2em;
+}
+
+.texto{
+	font-family: 'Roboto', sans-serif;	
 }
